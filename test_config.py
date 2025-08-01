@@ -19,7 +19,7 @@ def test_configuration():
         load_dotenv()
         
         # Check API key
-        api_key = os.getenv("SERPAPI_KEY", "6bbf05bfc95ea39d257c1ed7076a78177c8b0deed5edbb6b38d5d66f056472a4")
+        api_key = os.getenv("SERPAPI_KEY", "********")
         if api_key:
             print(f"   ✅ API key configured: {api_key[:8]}...")
         else:
