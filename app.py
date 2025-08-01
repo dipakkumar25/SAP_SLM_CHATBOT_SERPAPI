@@ -22,7 +22,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
 
 # Configuration
 class Settings:
-    SERPAPI_KEY = os.getenv("SERPAPI_KEY", "6bbf05bfc95ea39d257c1ed7076a78177c8b0deed5edbb6b38d5d66f056472a4")
+    SERPAPI_KEY = os.getenv("SERPAPI_KEY", "********")  # Replace with your actual SerpAPI key
     KB_DATA_PATH = os.getenv("KB_DATA_PATH", "kb_data/sap_kb.xlsx")
     EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "all-MiniLM-L6-v2")
     SIMILARITY_THRESHOLD = float(os.getenv("SIMILARITY_THRESHOLD", "0.7"))
